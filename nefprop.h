@@ -1,0 +1,11 @@
+#pragma once
+
+#include <windows.h>
+
+/* {C4E8A1D7-6B25-4F0E-9A33-8D5F2E7B1C46} */
+static const CLSID CLSID_NefPropertyHandler = {
+    0xc4e8a1d7, 0x6b25, 0x4f0e, {0x9a, 0x33, 0x8d, 0x5f, 0x2e, 0x7b, 0x1c, 0x46}};
+
+/* Windows PhotoMetadataHandler IPropertyStore. Chained so size/bit depth stay. */
+static const CLSID CLSID_PhotoMetadataHandler = {
+    0xa38b883c, 0x1682, 0x497e, {0x97, 0xb0, 0x0a, 0x3a, 0x9e, 0x80, 0x16, 0x82}};

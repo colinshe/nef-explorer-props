@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://schemas.microsoft.com/windows/2006/propertydescription"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        schemaVersion="1.0">
+  <propertyDescriptionList publisher="PhotoGeoTagger" product="NefPropHandler">
+    <propertyDescription name="PhotoGeoTagger.DateTaken"
+                         formatID="{8F4E2C1A-6B3D-4A90-9E15-2C7D5A8B0E31}"
+                         propID="100">
+      <searchInfo inInvertedIndex="false" isColumn="true"/>
+      <labelInfo label="Date taken"/>
+      <typeInfo type="String" isInnate="false" isViewable="true"/>
+      <displayInfo displayType="String"/>
+    </propertyDescription>
+  </propertyDescriptionList>
+</schema>

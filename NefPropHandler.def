@@ -1,0 +1,6 @@
+LIBRARY NefPropHandler
+EXPORTS
+    DllCanUnloadNow
+    DllGetClassObject
+    DllRegisterServer
+    DllUnregisterServer
