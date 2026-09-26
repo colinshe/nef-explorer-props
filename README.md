@@ -34,11 +34,28 @@ This handler supplies that layout, matching what Explorer already produces for a
 ## Requirements
 
 - Windows 10 or 11, 64-bit
-- The free Raw Image Extension from the Microsoft Store, if you also want thumbnails
-- A 64-bit MinGW-w64 `g++` on `PATH` to build
 - Administrator approval once, so Explorer can be pointed at the handler
+- The free Raw Image Extension from the Microsoft Store, if you also want thumbnails. Camera, date, and GPS details do not need it.
 
 The handler is read-only. It will not save ratings, titles, or GPS back into the NEF.
+
+## Install on another PC
+
+No compiler is required. Download the latest release zip from <https://github.com/colinshe/nef-explorer-props/releases>, or copy this folder from a PC where it is already built. The zip contains `NefPropHandler.dll`, `nef-datetaken.propdesc`, `register.ps1`, and `unregister.ps1`.
+
+1. Unzip it to a permanent folder, for example `C:\Tools\nef-explorer-props`. Do not leave it in Downloads. Explorer loads the DLL from this path.
+2. Open PowerShell in that folder and run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\register.ps1
+```
+
+3. Approve the administrator prompt. Explorer restarts, and open folder windows close.
+4. Right-click a `.nef` file, choose **Properties**, then **Details**.
+
+Run the same `register.ps1` again for each Windows account that should see the details. Removal is `unregister.ps1` in that same folder.
+
+To install from source instead, clone the repository and follow [Build](#build), then run `register.ps1`.
 
 ## Build
 
